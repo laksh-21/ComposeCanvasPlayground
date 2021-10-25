@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
-                    DrawableScreen(size = 150.dp)
+                    DraggableRectangle(size = 150.dp)
                 }
             }
         }

@@ -170,11 +170,11 @@ fun DrawLines(height: Dp) {
     }
 }
 
-private fun Path.moveTo(offset: Offset) {
+fun Path.moveTo(offset: Offset) {
     moveTo(x = offset.x, y = offset.y)
 }
 
-private fun Path.lineTo(offset: Offset) {
+fun Path.lineTo(offset: Offset) {
     lineTo(x = offset.x, y = offset.y)
 }
 

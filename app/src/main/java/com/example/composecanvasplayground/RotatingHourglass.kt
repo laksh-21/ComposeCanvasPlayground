@@ -1,6 +1,6 @@
 package com.example.composecanvasplayground
 
-import androidx.compose.animation.core.*
+import androidx.compose.animation.core.* // ktlint-disable no-wildcard-imports
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.size
 import androidx.compose.runtime.Composable

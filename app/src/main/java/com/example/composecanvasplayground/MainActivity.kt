@@ -8,7 +8,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.unit.dp
 import com.example.composecanvasplayground.ui.theme.ComposeCanvasPlaygroundTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +20,7 @@ class MainActivity : ComponentActivity() {
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.CenterHorizontally,
                 ) {
-                    DraggableRectangle(size = 150.dp)
+                    PointsAnimation()
                 }
             }
         }

@@ -3,7 +3,7 @@ package com.example.composecanvasplayground
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.runtime.*
+import androidx.compose.runtime.* // ktlint-disable no-wildcard-imports
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
@@ -29,7 +29,7 @@ fun DraggableRectangle(size: Dp) {
             .pointerInput(Unit) {
                 detectDragGestures(
                     onDragStart = { offset ->
-                        if(isInBounds(currentRectTopLeftPos, size.value, offset)) {
+                        if (isInBounds(currentRectTopLeftPos, size.value, offset)) {
                             shouldMove = true
                         } else {
                             return@detectDragGestures
@@ -37,7 +37,7 @@ fun DraggableRectangle(size: Dp) {
                         action.value = offset
                     },
                     onDrag = { _, dragAmount ->
-                        if(!shouldMove) return@detectDragGestures
+                        if (!shouldMove) return@detectDragGestures
                         action.value = dragAmount
                         changeInPos = dragAmount
                         currentRectTopLeftPos += changeInPos
